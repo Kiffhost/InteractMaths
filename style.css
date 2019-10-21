@@ -1,38 +1,58 @@
+/* Whole Page */
+
 body {
     background-color: whitesmoke;
 }
 
+/* Auxilliary */
 
 title {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* Main Text Body */
+
 h1 { 
     color: #0009ff ;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 48px;
+    font-size: 4vw;
 }
 
+h2 {
+    color: #0009ff ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2vw;
+}
 
 #heading {
-    font-size: 100px;
+    font-size: 10vw;
     color: #0009ff ;
     text-align: center;
 }
 
+
 p {
     color: #0088ff;
-    font-size: 18px;
+    font-size: 1vw;
 
+}
+
+a.plink {
+    color: #0088ff;
+    font-size: 1vw;
 }
 
 p.footer {
     color: black ;
-    font-size: 14px;
+    font-size: 0.8vw;
     text-align: left;
     margin: 100px, 20px, 20px, 20px;
 
 }
+
+/* Interactivity */
+
+
 
 a:link {
     color: #7d03ff;
@@ -45,3 +65,48 @@ a:visited {
 a:hover {
     color: #fb03ff;
 }
+
+/* Flexibility */
+
+img {
+    max-width: 100% ;
+    height: auto ;
+
+}
+
+/* RWD */
+@media only screen and (max-width: 600px) {
+    iframe {
+            width: 426px;
+            height: 240px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    iframe {
+            width: 426px;
+            height: 240px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    iframe {
+            width: 640px;
+            height: 360px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    iframe {
+            width: 854px;
+            height: 480px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    iframe  { 
+            width: 1280px;
+            height: 720px;
+    }
+}
+
