@@ -37,6 +37,7 @@ p {
 a.plink {
     color: #0088ff;
     font-size: 1vw;
+    display: inline;
 }
 
 p.footer {
@@ -77,15 +78,11 @@ img {
         width: 426px;
         height: 240px;
     }
-    p {
-        font-size: 14px;
-    }
-    h1 {
-        font-size: 20px;
-    }
-    h2 {
-        font-size: 18px;
-    }
+    p {font-size: 14px;}
+    h1 {font-size: 20px;}
+    h2 {font-size: 18px;}
+    a.plink {font-size: 14px;}
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -93,15 +90,10 @@ img {
         width: 426px;
         height: 240px;
     }
-    p {
-        font-size: 16px;
-    }
-    h1 {
-        font-size: 22px;
-    }
-    h2 {
-        font-size: 20px;
-    }
+    p {font-size: 16px;}
+    h1 {font-size: 22px;}
+    h2 {font-size: 20px;}
+    a.plink {font-size: 16px;}
 }
 
 @media only screen and (min-width: 768px) {
@@ -109,15 +101,10 @@ img {
         width: 640px;
         height: 360px;
     }
-    p {
-        font-size: 16px;
-    }
-    h1 {
-        font-size: 22px;
-    }
-    h2 {
-        font-size: 22px;
-    }
+    p {font-size: 16px;}
+    h1 {font-size: 22px;}
+    h2 {font-size: 22px;}
+    a.plink {font-size: 16px;}
 }
 
 @media only screen and (min-width: 992px) {
@@ -125,15 +112,10 @@ img {
         width: 854px;
         height: 480px;
     }
-    p {
-        font-size: 18px;
-    }
-    h1 {
-        font-size: 28px;
-    }
-    h2 {
-        font-size: 24px;
-    }
+    p {font-size: 18px;}
+    h1 {font-size: 28px;}
+    h2 {font-size: 24px;}   
+    a.plink {font-size: 18px;}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -141,14 +123,9 @@ img {
         width: 1280px;
         height: 720px;
     }
-    p {
-        font-size: 20px;
-    }
-    h1 {
-        font-size: 36px;
-    }
-    h2 {
-        font-size: 32px;
-    }
+    p {font-size: 20px;}
+    h1 {font-size: 36px;}
+    h2 {font-size: 32px;}
+    a.plink {font-size: 20px;}
 }
 

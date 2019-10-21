@@ -20,11 +20,23 @@
     <p>Well, InteractMaths is the name of a 3rd year Natural&nbsp;Sciences project, created with the help of students and staff from Exeter&nbsp;Mathematics&nbsp;School.
         The goal of the project is to create a resource that Year&nbsp;12&#8209;equivalent students and teachers can use to learn about the the mathematics of Matricies!
     </p>
+
     <br/>
-    <p>For example; here is a video by 3Blue1Brown explaining something:</p>
-    <iframe src='https://www.youtube.com/embed/v8VSDg_WQlA'>Whoops! Looks like you can't see it right now!</iframe>
+
+    <script>
+        function showvid() {
+            document.getElementById('Video1').hidden=0
+        }
+    </script>
+    <p>For example; here is a video by 3Blue1Brown explaining something:
+        <button type='button' onclick='showvid()'>Show Video</button>
+    </p>
+
+
+    <iframe src='https://www.youtube.com/embed/v8VSDg_WQlA' hidden='hidden' id='Video1'>Whoops! Looks like you can't see it right now!</iframe>
+
     <br/>
-    <p> Now that you've read all that, </p><a class='plink' href='https://chickenonaraft.com/'>here is a chicken.</a>
+    <p> Now that you've read all that, <a class='plink' href='https://chickenonaraft.com/' title='On a raft'>here is a chicken.</a></p>
 
     <footer>
         <p class='footer', id='credits'>InteractMaths was created by: <br /><br /> Felix Weedon, Beth Warne, Joshua Farnham, Olivia Selvey and Natasha Day</p>
