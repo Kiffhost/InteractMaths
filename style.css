@@ -15,7 +15,6 @@ title {
 h1 { 
     color: #0009ff ;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 4vw;
 }
 
 h2 {
@@ -25,7 +24,7 @@ h2 {
 }
 
 #heading {
-    font-size: 10vw;
+    font-size: 5vw;
     color: #0009ff ;
     text-align: center;
 }
@@ -33,8 +32,6 @@ h2 {
 
 p {
     color: #0088ff;
-    font-size: 1vw;
-
 }
 
 a.plink {
@@ -77,36 +74,81 @@ img {
 /* RWD */
 @media only screen and (max-width: 600px) {
     iframe {
-            width: 426px;
-            height: 240px;
+        width: 426px;
+        height: 240px;
+    }
+    p {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 18px;
     }
 }
 
 @media only screen and (min-width: 600px) {
     iframe {
-            width: 426px;
-            height: 240px;
+        width: 426px;
+        height: 240px;
+    }
+    p {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 20px;
     }
 }
 
 @media only screen and (min-width: 768px) {
     iframe {
-            width: 640px;
-            height: 360px;
+        width: 640px;
+        height: 360px;
+    }
+    p {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 22px;
     }
 }
 
 @media only screen and (min-width: 992px) {
     iframe {
-            width: 854px;
-            height: 480px;
+        width: 854px;
+        height: 480px;
+    }
+    p {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 24px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     iframe  { 
-            width: 1280px;
-            height: 720px;
+        width: 1280px;
+        height: 720px;
+    }
+    p {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 32px;
     }
 }
 
