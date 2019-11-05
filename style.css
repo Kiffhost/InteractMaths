@@ -10,6 +10,17 @@ title {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+p.footer {
+    color: black ;
+    text-align: left;
+    margin: 100px, 20px, 20px, 20px;
+}
+
+img.cornerlogo {
+    float: left;
+    overflow: hidden;
+}
+
 /* Main Text Body */
 
 h1 { 
@@ -39,12 +50,6 @@ a {
 
 a.plink {
     display: inline;
-}
-
-p.footer {
-    color: black ;
-    text-align: left;
-    margin: 100px, 20px, 20px, 20px;
 }
 
 ol {
@@ -141,6 +146,7 @@ img {
     ul.topnav li {width: 60px; padding: 6px 12px;}
     ol li {padding: 8px 4px;font-size: 14px;}
     ol li a {padding: 4px 8px;}
+    img.cornerlogo {width:36px;}
 }
 
 @media only screen and (min-width: 600px) {
@@ -157,6 +163,7 @@ img {
     ul.topnav li a {width: 80px; padding: 10px 18px;}
     ol li {padding: 10px 5px;font-size: 16px;}
     ol li a {padding: 4px 8px;}
+    img.cornerlogo {width:36px;}
 }
 
 @media only screen and (min-width: 768px) {
@@ -173,6 +180,7 @@ img {
     ul.topnav li a {width: 80px;padding: 10px 20px;}
     ol li {padding: 12px 6px;font-size: 16px;}
     ol li a {padding: 6px 12px;}
+    img.cornerlogo {width:36px;}
 }
 
 @media only screen and (min-width: 992px) {
@@ -189,6 +197,7 @@ img {
     ul.topnav li a {width: 100px;padding: 10px 22px;}
     ol li {padding: 14px 7px;font-size: 18px;}
     ol li a {padding: 6px 12px;}
+    img.cornerlogo {width:60px;}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -205,5 +214,6 @@ img {
     ul.topnav li a {width: 120px;padding: 10px 24px;}
     ol li {padding: 16px 8px;font-size: 20px;}
     ol li a {padding: 8px 16px;}
+    img.cornerlogo {width:64px;}
 }
 
