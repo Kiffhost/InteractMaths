@@ -8,37 +8,74 @@
     <link rel='stylesheet' href='style.css' /> 
     <link rel='shortcut icon' href='IM logo.png' type='image/png'>
     <title>InteractMaths</title>
-
+    <script>
+        function randombonus() {
+            var link;
+            var x = Math.floor(Math.random()*5);
+            switch (x) {
+                case 0: 
+                    link='http://endless.horse/';
+                    break;
+                case 1:
+                    link='http://www.koalastothemax.com/';
+                    break;
+                case 2:
+                    link='http://www.rrrgggbbb.com/';
+                    break;
+                case 3:
+                    link='http://eelslap.com/';
+                    break;
+                case 4:
+                    link='https://theuselessweb.site/blueballmachine/';
+            }
+            document.getElementById('bonus').href=link;
+        }
+    </script>
 </head>
 <body>
     <header>
         <h1 id='heading'><a href='.' target='_self'><img src='IM logo.png' alt='InteractMaths Logo' class='cornerlogo' /></a>Welcome to InteractMaths</h1>
     </header>
-
+    
     <ul class='topnav'>
         <li><a class='active navlink' href='.' target='_self'>Home</a></li>
         <li><a class='navlink' href='worksheets.html' target='_self'>Worksheet</a></li>
         <li><a class='navlink' href='videos.html' target='_self'>Video</a></li>
         <li><a class='navlink' href='prezis.html' target='_self'>Prezi</a></li>
-        <li><a class='navlink' href='http://endless.horse/'>Bonus</a></li>
+        <li><a class='navlink' href='http://endless.horse/' id='bonus' onclick='randombonus(); return true'>Bonus</a></li>
     </ul> 
 
     <h2>What is InteractMaths?</h2>
 
-    <p>Well, InteractMaths is the name of a 3rd year Natural&nbsp;Sciences project, created with the help of students and staff from Exeter&nbsp;Mathematics&nbsp;School.
-        The goal of the project is to create a resource that Year&nbsp;12&#8209;equivalent students and teachers can use to learn about the mathematics of Matricies!
+    <p>
+        InteractMaths is the name of a 3rd year Natural&nbsp;Sciences project, at the <a class='plink subtle' href='https://www.exetermathematicsschool.ac.uk/'><em>University&nbsp;of&nbsp;Exeter</em></a> created with the help of students and staff from <a class='plink subtle' href='https://www.exetermathematicsschool.ac.uk/'><em>Exeter&nbsp;Mathematics&nbsp;School.</em></a> <br/>
+        The goal of the project is to create a resource that <em>Year&nbsp;12&#8209;equivalent</em> students can use to learn about the mathematics of Matricies!
     </p>
-
     <br/>
-    <p>For example; here is a video by 3Blue1Brown explaining something:
-        <button type='button' onclick='document.getElementById("Video1").hidden=0'>Show Video</button>
+    <p>
+        On this website you will find several types of resources: 
+    </p>
+    <ul>
+        <li><b><em>Prezi presentations</em></b> provide an introduction and overview of a topic, as well as helping to explain the terminology and concepts you will meet as you delve deeper into this branch of mathematics.</li>
+        <li><b><em>Worksheets</em></b> with answers available will allow you to develop and text your understanding through practice.</li>
+        <li>Finally <b><em>Videos</em></b> of worked problems provide another way to learn, or explain the process of solving these problems.</li>
+        <li>We also intend to add a glossary, and bibliography containing links to other resources you may wish to use in your time studying matricies.</li>
+    </ul>
+    <p>
+        For example; here is a video by 3Blue1Brown explaining something: <!--Show/Hide buttons for video-->
+        <button type='button' onclick='document.getElementById("Video1").hidden=0; document.getElementById("hideb").hidden=0; document.getElementById("showb").hidden="hidden"' id='showb'>Show Video</button>
+        <button type='button' onclick='document.getElementById("Video1").hidden="hidden"; document.getElementById("showb").hidden=0; document.getElementById("hideb").hidden="hidden"' hidden='hidden' id='hideb'>Hide Video</button>
     </p>
 
 
     <iframe src='https://www.youtube.com/embed/v8VSDg_WQlA' hidden='hidden' id='Video1'>Whoops! Looks like you can't see it right now!</iframe>
 
     <br/>
-    <p> Now that you've read all that, <a class='plink' href='https://chickenonaraft.com/' title='On a raft'>here is a chicken.</a></p>
+    <p> 
+        From all of us here at InteractMaths: Thank you for taking a look at our work, we hope it helps you gain a deeper understanding of this field.
+        <br/>
+        Now that you've read all that, <a class='plink' href='https://chickenonaraft.com/' title='On a raft'>here is a chicken.</a>
+    </p>
 
     <footer>
         <p class='footer', id='credits'>InteractMaths was created by: <br /><br /> Felix Weedon, Beth Warne, Joshua Farnham, Olivia Selvey and Natasha Day</p>
