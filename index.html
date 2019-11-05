@@ -8,35 +8,13 @@
     <link rel='stylesheet' href='style.css' /> 
     <link rel='shortcut icon' href='IM logo.png' type='image/png'>
     <title>InteractMaths</title>
-    <script>
-        function randombonus() {
-            var link;
-            var x = Math.floor(Math.random()*5);
-            switch (x) {
-                case 0: 
-                    link='http://endless.horse/';
-                    break;
-                case 1:
-                    link='http://www.koalastothemax.com/';
-                    break;
-                case 2:
-                    link='http://www.rrrgggbbb.com/';
-                    break;
-                case 3:
-                    link='http://eelslap.com/';
-                    break;
-                case 4:
-                    link='https://theuselessweb.site/blueballmachine/';
-            }
-            document.getElementById('bonus').href=link;
-        }
-    </script>
+    <script src='randombonus.js'></script>
 </head>
 <body>
     <header>
         <h1 id='heading'><a href='.' target='_self'><img src='IM logo.png' alt='InteractMaths Logo' class='cornerlogo' /></a>Welcome to InteractMaths</h1>
     </header>
-    
+
     <ul class='topnav'>
         <li><a class='active navlink' href='.' target='_self'>Home</a></li>
         <li><a class='navlink' href='worksheets.html' target='_self'>Worksheet</a></li>
