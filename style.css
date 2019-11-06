@@ -10,17 +10,33 @@ title {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+p.footer {
+    color: black ;
+    text-align: left;
+    margin: 100px, 20px, 20px, 20px;
+    position: relative;
+    bottom: 0;
+    left:0;
+}
+
+img.cornerlogo {
+    float: left;
+    overflow: hidden;
+}
+
 /* Main Text Body */
 
 h1 { 
     font-size: 2vw;
     color: #2049fd ;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px 4px #9090a0;
 }
 
 h2 {
     color: #2049ff ;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 1px 1px 2px #9090a0;
 }
 
 #heading {
@@ -33,6 +49,21 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+em {
+    color: #d48000;
+    font-style: normal;
+    text-shadow: 1px 1px 2px #f0c090;
+}
+
+ul {
+    color: #00509f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul li {
+    padding: 6px 0;
+}
+
 a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -41,13 +72,12 @@ a.plink {
     display: inline;
 }
 
-p.footer {
-    color: black ;
-    text-align: left;
-    margin: 100px, 20px, 20px, 20px;
+a.subtle {
+    text-decoration: none;
 }
 
 ol {
+    color: #00509f;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -56,6 +86,7 @@ ol li a.qlink {
     color: white;
     text-align: center;
     display: inline-block;
+    border-radius: 5px;
     background-color: blueviolet;
 }
 
@@ -64,15 +95,8 @@ ol li a.alink {
     color: white;
     text-align: right;
     display: inline-block;
+    border-radius: 5px;
     background-color: blueviolet;
-}
-
-ol li a:hover {
-    background-color: #7000ff;
-}
-
-ol li a:visited {
-    background-color: #c403ff;
 }
 
 /* Interactivity */
@@ -89,6 +113,11 @@ a:hover {
     color: #fb03ff;
 }
 
+a.subtle em:hover {
+    text-shadow: none;
+    text-decoration-line: underline;
+}
+
 ul.topnav {
     position: -webkit-sticky;
     position: sticky;
@@ -102,10 +131,12 @@ ul.topnav {
 
 ul.topnav li {
     float: left;
+    padding: 0;
 }
 
 ul.topnav li a {
     display: block;
+    border-radius: 5px;
     text-decoration: none;
     color: white;
     text-align: center;
@@ -117,6 +148,14 @@ ul.topnav li a.active {
 
 ul.topnav li a:hover:not(.active) {
     background-color: #a030a0;
+}
+
+ol li a:visited {
+    background-color: #c403ff;
+}
+
+ol li a:hover {
+    background-color: #7000ff;
 }
 
 /* Flexibility */
@@ -138,9 +177,11 @@ img {
     h2 {font-size: 18px;}
     a.plink {font-size: 14px;}
     a.navlink {font-size: 14px;}
+    ul li {font-size: 14px;}
     ul.topnav li {width: 60px; padding: 6px 12px;}
     ol li {padding: 8px 4px;font-size: 14px;}
     ol li a {padding: 4px 8px;}
+    img.cornerlogo {width:36px;}
 }
 
 @media only screen and (min-width: 600px) {
@@ -154,9 +195,11 @@ img {
     h2 {font-size: 20px;}
     a.plink {font-size: 16px;}
     a.navlink {font-size: 16px;}
+    ul li {font-size: 16px;}
     ul.topnav li a {width: 80px; padding: 10px 18px;}
     ol li {padding: 10px 5px;font-size: 16px;}
     ol li a {padding: 4px 8px;}
+    img.cornerlogo {width:36px;}
 }
 
 @media only screen and (min-width: 768px) {
@@ -170,9 +213,11 @@ img {
     h2 {font-size: 22px;}
     a.plink {font-size: 16px;}
     a.navlink {font-size: 16px;}
+    ul li {font-size: 16px;}
     ul.topnav li a {width: 80px;padding: 10px 20px;}
     ol li {padding: 12px 6px;font-size: 16px;}
     ol li a {padding: 6px 12px;}
+    img.cornerlogo {width:36px;}
 }
 
 @media only screen and (min-width: 992px) {
@@ -186,9 +231,11 @@ img {
     h2 {font-size: 24px;}   
     a.plink {font-size: 18px;}
     a.navlink {font-size: 18px;}
+    ul li {font-size: 18px;}
     ul.topnav li a {width: 100px;padding: 10px 22px;}
     ol li {padding: 14px 7px;font-size: 18px;}
     ol li a {padding: 6px 12px;}
+    img.cornerlogo {width:60px;}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -202,8 +249,10 @@ img {
     h2 {font-size: 32px;}
     a.plink {font-size: 20px;}
     a.navlink {font-size: 20px;}
+    ul li {font-size: 20px;}
     ul.topnav li a {width: 120px;padding: 10px 24px;}
     ol li {padding: 16px 8px;font-size: 20px;}
     ol li a {padding: 8px 16px;}
+    img.cornerlogo {width:64px;}
 }
 
