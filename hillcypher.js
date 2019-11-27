@@ -3,6 +3,25 @@ function lton(l) {
     return charcode;
 }
 
+function numconversion(ciphernum) {
+    var ciphertext = '';
+    for (var i=0; i < ciphernum.length; i++){
+        ciphertext += String.fromCharCode(ciphernum[i]+97);
+    }
+    return ciphertext;
+}
+
+function flatten(m) {
+    var a = new Array(m.length**2), i=0;
+    for (var r=0; r < m.length; r++) {
+        for (var c=0; c < m[r].length; c++) {
+            a[i] = m[r][c];
+            i++;
+        }
+    }
+    return a;
+}
+
 function textconversion(plaintext) {
     plaintext = plaintext.toLowerCase();
     var plaintextnum = [];
@@ -10,29 +29,21 @@ function textconversion(plaintext) {
     for (i=0; i < plaintext.length; i++) {
         plaintextnum[i] = lton(plaintext.substr(i,1));
     }
-    return plaintextnum
+    return plaintextnum;
 }
 
 
 function mslice(plaintextnum, key) {
-    var key=[[12,18,13],[0,20,14],[10,12,18]],
+    var plainm=[];
     for (var i=0; i < key.length; ++i) {
-        
+        plainm[i] = [plaintextnum[i*3],plaintextnum[i*3+1],plaintextnum[i*3+2]];
     }
-
+    return plainm;
 }
 
 
-function hillcypher(plaintextnum, key) {
-    var keydim = Math.sqrt(length(key));
-    var cyphertextnum  = [];
-    var i; var j;
-    for (i=0; i < plaintextnum.length; i++) {
-        for (j=0; j < keydim; j++) {
-            cyphertextnum[i] += (plaintextnum[i])*(key[j])
-        }
-
-    }
+function hillcypher(plain) {
+    multiply(mslice(textconversion(plain), [[12,18,13],[0,20,14],[10,12,18]]), [[12,18,13],[0,20,14],[10,12,18]]);
 }
 
 function multiply(a, b) {
@@ -45,9 +56,14 @@ function multiply(a, b) {
         m[r][c] = 0;             // initialize the current cell
         for (var i = 0; i < aNumCols; ++i) {
           m[r][c] += a[r][i] * b[i][c];
+          m[r][c] = m[r][c]%26;
+        
         }
       }
     }
     return m;
-  }
-  
+}
+
+var plain='catsatmat';
+
+document.getElementById('print').innerHTML = hillcypher(plain, [[12,18,13],[0,20,14],[10,12,18]])
