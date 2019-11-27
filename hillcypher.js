@@ -16,10 +16,12 @@ function textconversion(plaintext) {
 
 function mslice(plaintextnum, key) {
     var key=[[12,18,13],[0,20,14],[10,12,18]],
+        plainm=[];
     for (var i=0; i < key.length; ++i) {
+        plainm[i] = [plaintextnum[i*3],plaintextnum[i*3+1],plaintextnum[i*3+2]]
         
     }
-
+    return plainm
 }
 
 
@@ -49,5 +51,8 @@ function multiply(a, b) {
       }
     }
     return m;
-  }
-  
+}
+
+var plain='catsatmat';
+
+document.getElementById('print').innerHTML = multiply(mslice(textconversion(plain)), [[12,18,13],[0,20,14],[10,12,18]])
