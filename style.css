@@ -81,6 +81,11 @@ ol {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+ol.blankol {
+    list-style-type: none;
+    padding: 0;
+}
+
 ol li a.qlink {
     text-decoration: none;
     color: white;
