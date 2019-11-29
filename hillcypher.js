@@ -64,6 +64,6 @@ function multiply(a, b) {
     return m;
 }
 
-var plain='catsatmat';
+var plain='catsatma';
 
 document.getElementById('print').innerHTML = hillcypher(plain, [[12,18,13],[0,20,14],[10,12,18]])
