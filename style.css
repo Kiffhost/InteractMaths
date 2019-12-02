@@ -49,6 +49,11 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+form {
+    color: #00509f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 em {
     color: #d48000;
     font-style: normal;
@@ -209,6 +214,7 @@ img {
         height: 240px;
     }
     p {font-size: 14px;}
+    form {font-size: 12px}
     p.footer {font-size: 10px;}
     h1 {font-size: 24px;}
     h2 {font-size: 18px;}
@@ -227,6 +233,7 @@ img {
         height: 240px;
     }
     p {font-size: 16px;}
+    form {font-size: 14px}
     p.footer {font-size: 12px;}
     h1 {font-size: 28px;}
     h2 {font-size: 20px;}
@@ -245,6 +252,7 @@ img {
         height: 360px;
     }
     p {font-size: 16px;}
+    form {font-size: 14px}
     p.footer {font-size: 12px;}
     h1 {font-size: 28px;}
     h2 {font-size: 22px;}
@@ -263,6 +271,7 @@ img {
         height: 480px;
     }
     p {font-size: 18px;}
+    form {font-size: 16px}
     p.footer {font-size: 12px;}
     h1 {font-size: 36px;}
     h2 {font-size: 24px;}   
@@ -281,6 +290,7 @@ img {
         height: 720px;
     }
     p {font-size: 20px;}
+    form {font-size: 18px}
     p.footer {font-size: 14px;}
     h1 {font-size: 48px;}
     h2 {font-size: 32px;}

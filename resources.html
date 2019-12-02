@@ -8,7 +8,7 @@
     <link rel='stylesheet' href='style.css' /> 
     <link rel='shortcut icon' href='IM logo.png' type='image/png'/>
     <title>InteractMaths</title>
-    <script src='randombonus.js'></script>
+    <script src='hillcypher.js'></script>
 </head>
 <body>
     <header>
@@ -22,11 +22,31 @@
         <li><a class='navlink' href='prezis.html' target='_self'>Prezi</a></li>
         <li><a class='navlink' href='applications.html' target='_self'>Applications</a></li>
         <li><a class='navlink' href='glossary.html' target='_self'>Glossary</a></li>
-        <li><a class='active navlink' href='resources.html' target='_self'>Resources</a></li>
-        <li><a class='navlink' href='http://eelslap.com/' id='bonus' onclick='randombonus(); return true'>Bonus</a></li>
+        <li><a class='navlink' href='resources.html' target='_self'>Resources</a></li>
+        <li><a class='navlink' href='http://eelslap.com/'>Bonus</a></li>
     </ul> 
 
-    <p>Work in progress</p>
+    <h2>Resources</h2>
+
+    <p>Here is an interactive Hill Cipher tool:</p>
+
+    <form oninput="x.value=hillcypher(plaintext.value, key)">
+        Input plaintext here:
+        <input name='plaintext' type='text'>
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ciphertext: &nbsp;&nbsp;&nbsp;&nbsp;
+        <output name='x' for='plaintext'></output>
+    </form>
+
+    <form oninput="x.value=decipher(ciphertext.value, invkey)">
+        Input ciphertext here:
+        <input name='ciphertext' type='text'>
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plaintext: &nbsp;&nbsp;&nbsp;&nbsp;
+        <output name='x' for='ciphertext'></output>
+    </form>
+
+    <p><em>An extra challenge:</em> Using just this tool, can you work out the Key matrix?</p>
 
     <footer>
         <p class='footer', id='credits'>InteractMaths was created by: <br /><br /> Felix Weedon, Beth Warne, Joshua Farnham, Olivia Selvey and Natasha Day</p>
